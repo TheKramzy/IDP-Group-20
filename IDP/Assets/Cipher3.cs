@@ -9,9 +9,12 @@ public class Cipher3 : MonoBehaviour
     public GameObject player;
     private void OnTriggerEnter2D(Collider2D collision)
     {
-       Act1.transform.position = new Vector3(100,0,0);
-       Act2.transform.position = new Vector3(0,0,0);
-       player.transform.position= new Vector3 (-8,4,0);
-       Begining.puzzlenumber = 4;
+        if (Begining.puzzlenumber == 3)
+        {
+            Act1.transform.position = new Vector3(100,0,0);
+            Act2.transform.position = new Vector3(0,0,0);
+            player.transform.position= new Vector3 (-8,4,0);
+            Begining.puzzlenumber = 4;
+        }
     }
 }
