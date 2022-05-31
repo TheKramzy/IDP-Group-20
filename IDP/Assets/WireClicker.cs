@@ -11,6 +11,7 @@ public class WireClicker : MonoBehaviour
     public GameObject RG;
     public GameObject BO;
     public GameObject YP;
+    public GameObject blackout;
 
     // Update is called once per frame
     private void Update()
@@ -239,6 +240,8 @@ public class WireClicker : MonoBehaviour
                 if (Begining.puzzlenumber == 1 && rg == "connected" && bo == "connected" && yp == "connected")
                 {
                     transform.position = new Vector3 (100,0,0);
+                    Begining.puzzlenumber = 2;
+                    blackout.transform.position = new Vector3 (100,0,0);
                 }
             }
         }    
