@@ -38,7 +38,7 @@ public class PaperDragger : MonoBehaviour
             {
                 background.transform.position = new Vector3 (0,0,0);
                 papertray.transform.position = new Vector3 (100,0,0);
-                player.transform.position = new Vector3 (0,0,0);
+                player.transform.position = new Vector3 (0.8f,3.9f,0);
                 Begining.puzzlenumber = 5;
 
             }

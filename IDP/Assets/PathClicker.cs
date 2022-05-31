@@ -18,33 +18,17 @@ public class PathClicker : MonoBehaviour
     public GameObject act3;
     private void Update()
     {
-        if (Input.GetMouseButtonUp(0))
+        if (Begining.puzzlenumber == 6)
         {
-            RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
-
-            if (hit.collider != null)
+            if (Input.GetMouseButtonUp(0))
             {
-                if (hit.collider.gameObject.name != "Good 1" && hit.collider.gameObject.name != "Good 2" && hit.collider.gameObject.name != "Good 3" && hit.collider.gameObject.name != "Good 4" && hit.collider.gameObject.name != "Good 5" && hit.collider.gameObject.name != "Good 6")
-                {
-                    Debug.Log("reset");
-                    pathnumber = 0;
-                    good1.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
-                    good2.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
-                    good3.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
-                    good4.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
-                    good5.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
-                    good6.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
-                }
+                RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
 
-                if (hit.collider.gameObject.name == "Good 1")
+                if (hit.collider != null)
                 {
-                    if (pathnumber == 0)
+                    if (hit.collider.gameObject.name != "Good 1" && hit.collider.gameObject.name != "Good 2" && hit.collider.gameObject.name != "Good 3" && hit.collider.gameObject.name != "Good 4" && hit.collider.gameObject.name != "Good 5" && hit.collider.gameObject.name != "Good 6")
                     {
-                        good1.GetComponent<Renderer>().material.color = new Color(0.8f,0.8f,1);
-                        pathnumber += 1;
-                    }
-                    else
-                    {
+                        Debug.Log("reset");
                         pathnumber = 0;
                         good1.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
                         good2.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
@@ -53,106 +37,131 @@ public class PathClicker : MonoBehaviour
                         good5.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
                         good6.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
                     }
-                }
+
+                    if (hit.collider.gameObject.name == "Good 1")
+                    {
+                        if (pathnumber == 0)
+                        {
+                            good1.GetComponent<Renderer>().material.color = new Color(0.8f,0.8f,1);
+                            pathnumber += 1;
+                            good2.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
+                            good3.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
+                            good4.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
+                            good5.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
+                            good6.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
+                        }
+                        else
+                        {
+                            pathnumber = 0;
+                            good1.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
+                            good2.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
+                            good3.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
+                            good4.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
+                            good5.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
+                            good6.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
+                        }
+                    }
                 
-                if (hit.collider.gameObject.name == "Good 2")
-                {
-                    if (pathnumber == 1)
+                    if (hit.collider.gameObject.name == "Good 2")
                     {
-                        good2.GetComponent<Renderer>().material.color = new Color(0.8f,0.8f,1);
-                        pathnumber += 1;
+                        if (pathnumber == 1)
+                        {
+                            good2.GetComponent<Renderer>().material.color = new Color(0.8f,0.8f,1);
+                            pathnumber += 1;
+                        }
+                        else
+                        {
+                            pathnumber = 0;
+                            good1.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
+                            good2.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
+                            good3.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
+                            good4.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
+                            good5.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
+                            good6.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
+                        }
                     }
-                    else
-                    {
-                        pathnumber = 0;
-                        good1.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
-                        good2.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
-                        good3.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
-                        good4.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
-                        good5.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
-                        good6.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
-                    }
-                }
 
-                if (hit.collider.gameObject.name == "Good 3")
-                {
-                    if (pathnumber == 2)
+                    if (hit.collider.gameObject.name == "Good 3")
                     {
-                        good3.GetComponent<Renderer>().material.color = new Color(0.8f,0.8f,1);
-                        pathnumber += 1;
+                        if (pathnumber == 2)
+                        {
+                            good3.GetComponent<Renderer>().material.color = new Color(0.8f,0.8f,1);
+                            pathnumber += 1;
+                        }
+                        else
+                        {
+                            pathnumber = 0;
+                            good1.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
+                            good2.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
+                            good3.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
+                            good4.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
+                            good5.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
+                            good6.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
+                        }
                     }
-                    else
-                    {
-                        pathnumber = 0;
-                        good1.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
-                        good2.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
-                        good3.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
-                        good4.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
-                        good5.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
-                        good6.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
-                    }
-                }
 
-                if (hit.collider.gameObject.name == "Good 4")
-                {
-                    if (pathnumber == 3)
+                    if (hit.collider.gameObject.name == "Good 4")
                     {
-                        good4.GetComponent<Renderer>().material.color = new Color(0.8f,0.8f,1);
-                        pathnumber += 1;
+                        if (pathnumber == 3)
+                        {
+                            good4.GetComponent<Renderer>().material.color = new Color(0.8f,0.8f,1);
+                            pathnumber += 1;
+                        }
+                        else
+                        {
+                            pathnumber = 0;
+                            good1.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
+                            good2.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
+                            good3.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
+                            good4.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
+                            good5.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
+                            good6.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
+                        }
                     }
-                    else
-                    {
-                        pathnumber = 0;
-                        good1.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
-                        good2.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
-                        good3.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
-                        good4.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
-                        good5.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
-                        good6.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
-                    }
-                }
 
-                if (hit.collider.gameObject.name == "Good 5")
-                {
-                    if (pathnumber == 4)
+                    if (hit.collider.gameObject.name == "Good 5")
                     {
-                        good5.GetComponent<Renderer>().material.color = new Color(0.8f,0.8f,1);
-                        pathnumber += 1;
+                        if (pathnumber == 4)
+                        {
+                            good5.GetComponent<Renderer>().material.color = new Color(0.8f,0.8f,1);
+                            pathnumber += 1;
+                        }
+                        else
+                        {
+                            pathnumber = 0;
+                            good1.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
+                            good2.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
+                            good3.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
+                            good4.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
+                            good5.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
+                            good6.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
+                        }
                     }
-                    else
-                    {
-                        pathnumber = 0;
-                        good1.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
-                        good2.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
-                        good3.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
-                        good4.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
-                        good5.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
-                        good6.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
-                    }
-                }
 
-                if (hit.collider.gameObject.name == "Good 6")
-                {
-                    if (pathnumber == 5)
+                    if (hit.collider.gameObject.name == "Good 6")
                     {
-                        background.transform.position = new Vector3 (0,0,0);
-                        pathcode.transform.position = new Vector3 (100,0,0);
-                        act2.transform.position = new Vector3 (100,0,0);
-                        act3.transform.position = new Vector3(0,0,0);
-                        player.transform.position = new Vector3 (0,0,0);
-                    }
-                    else
-                    {
-                        pathnumber = 0;
-                        good1.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
-                        good2.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
-                        good3.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
-                        good4.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
-                        good5.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
-                        good6.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
+                        if (pathnumber == 5)
+                        {
+                            background.transform.position = new Vector3 (0,0,0);
+                            pathcode.transform.position = new Vector3 (100,0,0);
+                            act2.transform.position = new Vector3 (100,0,0);
+                            act3.transform.position = new Vector3(0,0,0);
+                            player.transform.position = new Vector3 (0,0,0);
+                        }
+                        else
+                        {
+                            pathnumber = 0;
+                            good1.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
+                            good2.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
+                            good3.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
+                            good4.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
+                            good5.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
+                            good6.GetComponent<Renderer>().material.color = new Color(100, 100, 100);
+                        }
                     }
                 }
             }
-        }
+            
+        } 
     }
 }

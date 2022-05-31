@@ -12,5 +12,6 @@ public class Cipher3 : MonoBehaviour
        Act1.transform.position = new Vector3(100,0,0);
        Act2.transform.position = new Vector3(0,0,0);
        player.transform.position= new Vector3 (-8,4,0);
+       Begining.puzzlenumber = 4;
     }
 }

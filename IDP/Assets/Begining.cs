@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Begining : MonoBehaviour
 {
-    public static int puzzlenumber = 4;
+    public static int puzzlenumber = 1;
     // Start is called before the first frame update
     void Start()
     {
