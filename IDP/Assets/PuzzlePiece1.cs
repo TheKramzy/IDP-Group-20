@@ -11,9 +11,8 @@ public class PuzzlePiece1 : MonoBehaviour
             if (collision.gameObject.name == "Puzzle Piece 1")
             {
                 transform.position = collision.transform.position;
+                PaperDragger.Piece1 = true;
             }
         }
     }
-
-    
 }

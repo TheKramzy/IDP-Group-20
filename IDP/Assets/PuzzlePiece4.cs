@@ -10,7 +10,6 @@ public class PuzzlePiece4 : MonoBehaviour
         {
             if (collision.gameObject.name == "Puzzle Piece 4")
             {
-                Debug.Log("Conncted");
                 transform.position = collision.transform.position;
                 PaperDragger.Piece4 = true;
             }

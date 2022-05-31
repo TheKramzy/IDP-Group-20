@@ -34,7 +34,6 @@ public class PaperDragger : MonoBehaviour
 
         if (Piece1 == true && Piece2 == true && Piece3 == true && Piece4 == true && Piece5 == true)
         {
-            Debug.Log("connected");
             if (Begining.puzzlenumber == 4)
             {
                 background.transform.position = new Vector3 (0,0,0);
