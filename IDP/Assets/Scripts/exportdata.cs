@@ -8,7 +8,7 @@ using UnityEngine.Networking;
 
 public class exportdata : MonoBehaviour
 {
-
+    public static string time = "4";
     [SerializeField] InputField Answer1;
     [SerializeField] InputField Answer2;
     [SerializeField] InputField Answer3;
@@ -25,7 +25,7 @@ public class exportdata : MonoBehaviour
         {
             return;
         }
-        StartCoroutine(Post(Answer1.text, Answer2.text, Answer3.text, Answer4.text, Answer5.text, Answer6.text));
+        StartCoroutine(Post(exportdata.time, Answer2.text, Answer3.text, Answer4.text, Answer5.text, Answer6.text));
     }
 
     IEnumerator Post(string s1, string s2, string s3, string s4, string s5, string s6)
