@@ -5,15 +5,17 @@ using UnityEngine;
 public class Cipher3 : MonoBehaviour
 {
     public GameObject Act1;
-    public GameObject Act2;
-    public GameObject player;
+    public GameObject Player;
+    public GameObject Act2Cutscene;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (Begining.puzzlenumber == 3)
         {
             Act1.transform.position = new Vector3(100,0,0);
-            Act2.transform.position = new Vector3(0,0,0);
-            player.transform.position= new Vector3 (-8,4,0);
+            Player.transform.position = new Vector3(100,0,0);
+            Act2Cutscene.transform.position = new Vector3(0,0,0);
+
             Begining.puzzlenumber = 4;
         }
     }

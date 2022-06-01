@@ -242,6 +242,7 @@ public class WireClicker : MonoBehaviour
                     transform.position = new Vector3 (100,0,0);
                     Begining.puzzlenumber = 2;
                     blackout.transform.position = new Vector3 (100,0,0);
+                    Begining.cutscene = true;
                 }
             }
         }    

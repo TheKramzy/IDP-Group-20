@@ -1,0 +1,118 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13d8d6dbf48afb54b86d18e14eaf1c36, type: 3}
+  m_Name: OpeningCutscene
+  m_EditorClassIdentifier: 
+  charactername: Josh
+  text:
+  - Ms.Live? I am here to pickup my phone.
+  - Hello? Is anyone here?
+  - I am going to miss my bus if I dont hurry.
+  - What is this?
+  - This cant be real?
+  - What is th-
+  - ....
+  - Ow my head.
+  - Ms.Live must have knocked me out.
+  - I need to turn on the lights.
+  - '*press WASD to move*'
+  - The note says opposites attract!
+  - Perfect the lights are back on.
+  - It seemes the door is locked and I need a code for it
+  - Let me check the boxes. I need to be careful though.
+  - ' I dont know if any of them are traped'
+  - Got the code time to escape
+  - ...
+  - I need to call the police adn get out of here
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  - I am going to miss my bus if I dont hurry.
+  index: 20
+  background: {fileID: 21300000, guid: 7a0946fc9b01de2408c95c813bf9b931, type: 3}
