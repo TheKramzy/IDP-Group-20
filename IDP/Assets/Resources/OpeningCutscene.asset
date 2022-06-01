@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13d8d6dbf48afb54b86d18e14eaf1c36, type: 3}
   m_Name: OpeningCutscene
   m_EditorClassIdentifier: 
-  charactername: Josh
+  charactername: Player
   text:
   - Ms.Live? I am here to pickup my phone.
   - Hello? Is anyone here?
@@ -30,9 +30,27 @@ MonoBehaviour:
   - It seemes the door is locked and I need a code for it
   - Let me check the boxes. I need to be careful though.
   - ' I dont know if any of them are traped'
-  - Got the code time to escape
+  - ..
+  - Got the code, time to escape
   - ...
-  - I need to call the police adn get out of here
+  - I need to call the police and get out of here
+  - '*Ring* *Ring* Ring*'
+  - 911 Whats your emergency
+  - Please come to SMAC highschool!!!!
+  - My teacher is trying to take over the world!!!!
+  - '*Footsteps aproach*'
+  - Hurry she is coming!
+  - ....
+  - '*Ms.Live enters room*'
+  - ....
+  - Why is she ripping that paper?
+  - ....
+  - Ok she left.
+  - I should check the trash to see what the paper was.
+  - Wait I have seen this flask.
+  - Yes!! Got the antidote.
+  - I need to get out of here.
+  - I need to remember this path
   - I am going to miss my bus if I dont hurry.
   - I am going to miss my bus if I dont hurry.
   - I am going to miss my bus if I dont hurry.
@@ -96,23 +114,5 @@ MonoBehaviour:
   - I am going to miss my bus if I dont hurry.
   - I am going to miss my bus if I dont hurry.
   - I am going to miss my bus if I dont hurry.
-  - I am going to miss my bus if I dont hurry.
-  - I am going to miss my bus if I dont hurry.
-  - I am going to miss my bus if I dont hurry.
-  - I am going to miss my bus if I dont hurry.
-  - I am going to miss my bus if I dont hurry.
-  - I am going to miss my bus if I dont hurry.
-  - I am going to miss my bus if I dont hurry.
-  - I am going to miss my bus if I dont hurry.
-  - I am going to miss my bus if I dont hurry.
-  - I am going to miss my bus if I dont hurry.
-  - I am going to miss my bus if I dont hurry.
-  - I am going to miss my bus if I dont hurry.
-  - I am going to miss my bus if I dont hurry.
-  - I am going to miss my bus if I dont hurry.
-  - I am going to miss my bus if I dont hurry.
-  - I am going to miss my bus if I dont hurry.
-  - I am going to miss my bus if I dont hurry.
-  - I am going to miss my bus if I dont hurry.
-  index: 20
+  index: 36
   background: {fileID: 21300000, guid: 7a0946fc9b01de2408c95c813bf9b931, type: 3}
