@@ -99,6 +99,7 @@ public class OpeningDialogue : MonoBehaviour
                 if (Input.GetMouseButtonUp(0))
                 {
                     Begining.puzzlenumber = 6;
+                    SecretWallCollision.pathlight = true;
                 }    
             }
         }
