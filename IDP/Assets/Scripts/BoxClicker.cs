@@ -18,6 +18,7 @@ public class BoxClicker : MonoBehaviour
                 if (hit.collider.gameObject.name == "Mag Collider")
                 {
                     Begining.puzzlenumber = 3;
+                    Begining.cutscene = true;
                     shelves.transform.position = new Vector3 (100,0,0);
                     magbox.transform.position = new Vector3 (0,0,0);
                 }

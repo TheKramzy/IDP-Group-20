@@ -5,7 +5,7 @@ using UnityEngine;
 public class CircuitCollisionActivation : MonoBehaviour
 {
     public GameObject circuit;
-    private void OnTriggerStay2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (Begining.puzzlenumber == 1)
         {

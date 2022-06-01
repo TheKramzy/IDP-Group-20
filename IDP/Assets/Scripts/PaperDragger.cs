@@ -40,6 +40,7 @@ public class PaperDragger : MonoBehaviour
                 papertray.transform.position = new Vector3 (100,0,0);
                 player.transform.position = new Vector3 (0.8f,3.9f,0);
                 Begining.puzzlenumber = 5;
+                Begining.cutscene = true;
 
             }
         }

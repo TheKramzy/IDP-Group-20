@@ -16,6 +16,7 @@ public class SecretWallCollision : MonoBehaviour
             background.transform.position = new Vector3 (100,0,0);
             pathcode.transform.position = new Vector3 (0,0,0);
             player.transform.position = new Vector3 (0,100,0);
+            Begining.cutscene = true;
         }
         if (Begining.puzzlenumber == 7)
         {

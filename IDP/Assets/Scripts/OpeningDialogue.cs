@@ -15,6 +15,7 @@ public class OpeningDialogue : MonoBehaviour
     public GameObject Act2;
     public GameObject Act3;
     public GameObject Player;
+    public GameObject Act2Cutscene;
 
 
     void Start()
@@ -65,8 +66,42 @@ public class OpeningDialogue : MonoBehaviour
             {
                 ExitDialogue();
             }
+            if (dialogue.index == 18)
+            {
+                ExitDialogue();
+            }
+            if (dialogue.index == 21)
+            {
+                nameText.text = "911";
+            }
+            if (dialogue.index == 22)
+            {
+                nameText.text = dialogue.charactername;
+            }
+            if (dialogue.index == 33)
+            {
+                ExitDialogue();
+                Act2.transform.position = new Vector3 (0,0,0);
+                Act2Cutscene.transform.position = new Vector3 (100,0,0);
+                Player.transform.position = new Vector3 (-8,4,0);
+            }
+            if (dialogue.index == 34)
+            {
+                ExitDialogue();
+            }
+            if (dialogue.index ==36)
+            {
+                ExitDialogue();
+            }
+            if (dialogue.index == 37)
+            {
+                ExitDialogue();
+                if (Input.GetMouseButtonUp(0))
+                {
+                    Begining.puzzlenumber = 6;
+                }    
+            }
         }
-
     }
 
     void NextLine()
