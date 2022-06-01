@@ -18,7 +18,7 @@ public class PathClicker : MonoBehaviour
     public GameObject act3;
     private void Update()
     {
-        if (Begining.puzzlenumber == 6)
+        if (Begining.puzzlenumber == 6 & SecretWallCollision.pathlight == true)
         {
             if (Input.GetMouseButtonUp(0))
             {
