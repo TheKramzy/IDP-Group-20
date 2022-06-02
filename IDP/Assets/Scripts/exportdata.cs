@@ -8,16 +8,18 @@ using UnityEngine.Networking;
 
 public class exportdata : MonoBehaviour
 {
-    public static string time = "4";
     [SerializeField] InputField Answer1;
     [SerializeField] InputField Answer2;
     [SerializeField] InputField Answer3;
     [SerializeField] InputField Answer4;
     [SerializeField] InputField Answer5;
     [SerializeField] InputField Answer6;
+    [SerializeField] InputField Answer7;
+    
+    public string timeleft = Timer.currentTime.ToString();
+    
 
     string URL = "https://docs.google.com/forms/u/0/d/e/1FAIpQLSeyCdx9sXwznBHESlnf5UdFRCI8zhSBFzsmRvLwsF9qrjU_5A/formResponse";
-
 
     public void Send()
     {
@@ -25,10 +27,11 @@ public class exportdata : MonoBehaviour
         {
             return;
         }
-        StartCoroutine(Post(exportdata.time, Answer2.text, Answer3.text, Answer4.text, Answer5.text, Answer6.text));
+        StartCoroutine(Post(Answer1.text, Answer2.text, Answer3.text, Answer4.text, Answer5.text, Answer6.text, timeleft, Answer7.text));
     }
+    
 
-    IEnumerator Post(string s1, string s2, string s3, string s4, string s5, string s6)
+    IEnumerator Post(string s1, string s2, string s3, string s4, string s5, string s6, string s7, string s8)
     {
 
 
@@ -39,6 +42,8 @@ public class exportdata : MonoBehaviour
         form.AddField("entry.1086390998", s4);
         form.AddField("entry.794583168", s5);
         form.AddField("entry.1233911286", s6);
+        form.AddField("entry.1851739713", s7);
+        form.AddField("entry.560465047", s8);
 
         UnityWebRequest www = UnityWebRequest.Post(URL, form);
 

@@ -42,6 +42,7 @@ public class Timer : MonoBehaviour
         if (time.Seconds < 10)
         {
             timerText.text = time.Minutes.ToString() + ":0" + time.Seconds.ToString();
+            Debug.Log(time);
         }
         else 
         {

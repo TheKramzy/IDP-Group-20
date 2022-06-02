@@ -5,6 +5,15 @@ using UnityEngine;
 public class TitleScreen : MonoBehaviour
 {
     public GameObject Titlescreen;
+    public GameObject OpeningCutscene;
+    public GameObject dialogue;
+
+    void Start()
+    {
+        dialogue.transform.position = new Vector3 (100,0,0);
+        Begining.cutscene = false;
+    }
+
     private void Update()
     {
         if (Input.GetMouseButtonUp(0))
@@ -16,6 +25,8 @@ public class TitleScreen : MonoBehaviour
                 if (hit.collider.gameObject.name == "PlayButton")
                 {
                     Titlescreen.transform.position = new Vector3 (100,0,0);
+                    OpeningCutscene.transform.position = new Vector3 (0,0,0);
+                    Begining.cutscene = true;
                 }
             }
         }

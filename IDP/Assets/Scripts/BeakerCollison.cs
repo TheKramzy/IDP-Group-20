@@ -8,7 +8,6 @@ public class BeakerCollison : MonoBehaviour
     {
         if (Begining.puzzlenumber == 5)
         {
-            Begining.puzzlenumber = 6;
             Begining.cutscene = true;
         }
     }
