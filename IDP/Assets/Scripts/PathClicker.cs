@@ -142,11 +142,7 @@ public class PathClicker : MonoBehaviour
                     {
                         if (pathnumber == 5)
                         {
-                            background.transform.position = new Vector3 (0,0,0);
-                            pathcode.transform.position = new Vector3 (100,0,0);
-                            act2.transform.position = new Vector3 (100,0,0);
-                            act3.transform.position = new Vector3(0,0,0);
-                            player.transform.position = new Vector3 (0,0,0);
+                            Loader.ToSurvey();
                         }
                         else
                         {
