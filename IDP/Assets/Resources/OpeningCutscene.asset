@@ -30,9 +30,9 @@ MonoBehaviour:
   - Perfect the lights are back on.
   - It seemes the door is locked and I need a code for it
   - Let me check the boxes. I need to be careful though.
-  - ' I dont know if any of them are trapped'
+  - '*clicked on the correct box to get the passcode*'
   - ..
-  - Got the code, I need ot leave throught the door
+  - Got the code, the note says the letters were shifted 9 from the orignal alphabet
   - ...
   - I need to call the police about Ms.Lives Plans and get out of here
   - '*Ring* *Ring* Ring*'
@@ -53,6 +53,7 @@ MonoBehaviour:
   - Yes!! Got the antidote list
   - I need to get out of here through the right door.
   - I need to remember this path
+  - Here is the path again
   - I am going to miss my bus if I dont hurry.
   - I am going to miss my bus if I dont hurry.
   - I am going to miss my bus if I dont hurry.
@@ -115,6 +116,5 @@ MonoBehaviour:
   - I am going to miss my bus if I dont hurry.
   - I am going to miss my bus if I dont hurry.
   - I am going to miss my bus if I dont hurry.
-  - I am going to miss my bus if I dont hurry.
-  index: 33
+  index: 34
   background: {fileID: 21300000, guid: 7a0946fc9b01de2408c95c813bf9b931, type: 3}

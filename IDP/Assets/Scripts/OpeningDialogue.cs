@@ -102,6 +102,14 @@ public class OpeningDialogue : MonoBehaviour
                     SecretWallCollision.pathlight = true;
                 }    
             }
+            if (dialogue.index == 38)
+            {
+                ExitDialogue();
+            }
+            if (dialogue.index == 38)
+            {
+                SecretWallCollision.pathlight = true;
+            }
         }
     }
 
